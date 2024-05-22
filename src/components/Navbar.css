@@ -1,0 +1,16 @@
+.Navbar {
+  padding: 10px 0;
+  background: bisque;
+}
+
+.Nav-content {
+  display: flex;
+
+  svg {
+    margin-right: 56px;
+  }
+}
+.Nav-List {
+  display: flex;
+  gap: 32px;
+}
