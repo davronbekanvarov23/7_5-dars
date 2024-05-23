@@ -40,7 +40,7 @@ function NavLinks() {
       {links.map((link) => {
         return (
           <li key={link.id}>
-            <Link to={link.path}>{link.text}</Link>
+            <Link className="link" to={link.path}>{link.text}</Link>
           </li>
         );
       })}

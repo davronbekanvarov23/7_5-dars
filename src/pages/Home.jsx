@@ -1,9 +1,11 @@
-import React from 'react'
+import ProductsList from "../components/ProductsList";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <ProductsList />
+    </>
+  );
 }
 
-export default Home
+export default Home;

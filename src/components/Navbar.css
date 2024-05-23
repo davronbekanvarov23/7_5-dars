@@ -5,12 +5,38 @@
 
 .Nav-content {
   display: flex;
-
-  svg {
-    margin-right: 56px;
-  }
 }
 .Nav-List {
+  margin-left: 56px;
+  margin-right: auto;
   display: flex;
   gap: 32px;
+  .link {
+    color: #69707d;
+    &&:hover {
+      color: #1d2026;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  color: aqua;
+  &&:hover {
+    color: red;
+    .soni {
+      background-color: aqua;
+    }
+  }
+}
+.soni {
+  position: absolute;
+  bottom: 12px;
+  left: 13px;
+  font-size: 12px;
+  color: white;
+  background-color: red;
+  border-radius: 8px;
+  padding: 1px;
 }
