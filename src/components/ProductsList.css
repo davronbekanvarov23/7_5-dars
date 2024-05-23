@@ -1,9 +1,8 @@
-
-
-.modal {position: absolute;
+.modal {
+  position: absolute;
   right: 0;
   top: 0;
-  background: #000;
+  background: #f1f1f1f1;
   display: flex;
   width: 200px;
   height: 200px;

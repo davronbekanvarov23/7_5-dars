@@ -36,6 +36,7 @@ ol {
 }
 body {
   font-family: "Kumbh Sans";
+  position: relative;
 }
 .container {
   position: relative;
