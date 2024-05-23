@@ -1,6 +1,5 @@
 .Navbar {
   padding: 20px 0;
-  background: bisque;
 }
 
 .Nav-content {
@@ -22,9 +21,10 @@
   width: 20px;
   height: 20px;
 }
-
-.card {
+.cartt {
   position: relative;
+}
+.card {
   cursor: pointer;
   color: aqua;
   &&:hover {

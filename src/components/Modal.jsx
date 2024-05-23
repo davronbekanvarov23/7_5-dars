@@ -10,15 +10,9 @@ function Cart() {
   const { products } = useSelector((state) => state.products);
   if (products.length == 0) {
     return (
-      <div className=" ">
-        <h1 className=" ">Savatda hozircha mahsulot yo' q</h1>
-        <p>
-          Bosh sahifadagi to'plamlardan boshlang yoki kerakli mahsulotni qidiruv
-          orqali toping
-        </p>
-        <Link className="" to="/">
-          Home
-        </Link>
+      <div className="empty ">
+        <h1>Cart</h1>
+        <p>Your cart is empty</p>
       </div>
     );
   } else {

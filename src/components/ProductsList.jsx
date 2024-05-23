@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./ProductsList.css";
-import Cart from "./Modal";
 
 import product1 from "../assets/image-product-1.jpg";
 import product2 from "../assets/image-product-2.jpg";
@@ -67,10 +66,6 @@ export const products = [
 
 
 
-const handlecart = () => {
-
-};
-
 function ProductsList() {
   const dispatch = useDispatch();
 
@@ -98,10 +93,6 @@ function ProductsList() {
       {products.map((product) => {
         return (
           <div className="cart" key={product.id}>
-            <div className="modal" id="modal" onClick={handlecart}>
-              <Cart />
-            </div>
-
             <div className="cart-images">
               <img
                 className="image"
