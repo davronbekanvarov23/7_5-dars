@@ -6,10 +6,10 @@
   display: flex;
   width: 200px;
   height: 200px;
-}
-.hide {
   display: none;
+
 }
+
 .image {
   border-radius: 15px;
 }
