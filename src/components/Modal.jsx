@@ -10,15 +10,13 @@ function Cart() {
   const { products } = useSelector((state) => state.products);
   if (products.length == 0) {
     return (
-      <div className=" mx-auto max-w-6xl flex flex-col  items-center gap-5">
-        <h1 className=" text-2xl font-medium">
-          Savatda hozircha mahsulot yo' q
-        </h1>
+      <div className=" ">
+        <h1 className=" ">Savatda hozircha mahsulot yo' q</h1>
         <p>
           Bosh sahifadagi to'plamlardan boshlang yoki kerakli mahsulotni qidiruv
           orqali toping
         </p>
-        <Link className="btn btn-primary" to="/">
+        <Link className="" to="/">
           Home
         </Link>
       </div>
@@ -38,7 +36,7 @@ function Cart() {
               </h1>
               <button
                 onClick={() => dispatch(removeProduct(product.id))}
-                className="btn btn-ghost btn-xs"
+                className=""
               >
                 <FaTrash className=" w-5 h-5" />
               </button>
