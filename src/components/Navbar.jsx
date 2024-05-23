@@ -6,6 +6,7 @@ import { MdShoppingCart } from "react-icons/md";
 
 import { useSelector } from "react-redux";
 
+
 function Navbar() {
   const { amount } = useSelector((state) => state.products);
   return (
@@ -16,10 +17,8 @@ function Navbar() {
           <NavLinks />
         </ul>
 
-        <div className="card">
-          <span className="soni">
-            {amount}
-          </span>
+        <div className="card" >
+          <span className="soni">{amount}</span>
           <MdShoppingCart className="korzinka" />
         </div>
       </div>

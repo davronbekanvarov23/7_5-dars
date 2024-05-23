@@ -1,4 +1,14 @@
-.modal {
+
+
+.modal {position: absolute;
+  right: 0;
+  top: 0;
+  background: #000;
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+.hide {
   display: none;
 }
 .image {

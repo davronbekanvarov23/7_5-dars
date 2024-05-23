@@ -65,6 +65,12 @@ export const products = [
   },
 ];
 
+
+
+const handlecart = () => {
+
+};
+
 function ProductsList() {
   const dispatch = useDispatch();
 
@@ -92,7 +98,7 @@ function ProductsList() {
       {products.map((product) => {
         return (
           <div className="cart" key={product.id}>
-            <div className="modal">
+            <div className="modal" id="modal" onClick={handlecart}>
               <Cart />
             </div>
 
