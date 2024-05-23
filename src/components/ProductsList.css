@@ -1,32 +1,85 @@
 .modal {
   position: absolute;
+  padding: 24px;
   right: -172px;
   top: 30px;
   background: #ffffff;
   display: flex;
-  width: 360;
-  height: 256;
+  width: 360px;
+  height: 256px;
   z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.empty {
+  width: 360px;
 
-  .empty {
-    width: 360px;
-    height: 256px;
-    background: #ffffff;
-    padding: 24px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  .h1 {
+    color: #1d2026;
+    font-size: 16;
+    font-weight: 700;
+    margin-bottom: 105px;
   }
-  h1 {
+  p {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+
+    color: #69707d;
+    font-weight: 700;
+  }
+}
+
+.product-box {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  .h1 {
     color: #1d2026;
     font-size: 16;
     font-weight: 700;
   }
-  p {
-    text-align: center;
-    margin-top: 105px;
+  .product-cart {
+    margin-top: 52px;
+    margin-bottom: 24px;
+    .cart-text {
+      display: flex;
+      flex-direction: column;
+      margin-right: auto;
+      gap: 10px;
+    }
+    .price {
+      color: #1d2026;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .name {
+      color: #69707d;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .delete {
+      background: inherit;
+      border: none;
+      color: #69707d;
+      cursor: pointer;
+    }
+    display: flex;
   }
 }
 
+.btnClose {
+  width: 312px;
+  height: 56px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  background: #ff7e1b;
+  padding: 18px 110px;
+}
 .image {
   border-radius: 15px;
 }

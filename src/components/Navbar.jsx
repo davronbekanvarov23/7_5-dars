@@ -9,13 +9,10 @@ import { useSelector } from "react-redux";
 
 function Navbar() {
   const [showModal, setShowModal] = useState(false);
-
-  const closaModal = (e) => {
-    console.log(e);
-  };
+ 
   const { amount } = useSelector((state) => state.products);
   return (
-    <div className="Navbar ">
+    <div className="Navbar">
       <div className="Nav-content align-content">
         <img src={logo} alt="" width={138} height={20} />
         <ul className="Nav-List">
@@ -23,12 +20,12 @@ function Navbar() {
         </ul>
 
         <div className="cartt">
-          <div className="card" onClick={()=>setShowModal(true)}>
+          <div className="card" onClick={() => setShowModal(true)}>
             <span className="soni">{amount}</span>
             <MdShoppingCart className="korzinka" />
           </div>
           {showModal && (
-            <div className="modal" id="modal">
+            <div className="modal">
               <Cart />
             </div>
           )}
